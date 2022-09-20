@@ -38,7 +38,7 @@ def initialise_tfidf_vectorizer(data,ngram = 1,stopwords = False):
     vectorizer_tfidf.fit(data)
     X = vectorizer_tfidf.transform(data)
     return X, vectorizer_tfidf
-    
+
 
 '''Word 2 vec model, converts vocabulary into vector representation
  https://jonathan-hui.medium.com/nlp-word-embedding-glove-5e7f523999f6
@@ -84,8 +84,17 @@ def embedding_for_vocab(filepath, word_index,
     return embedding_matrix_vocab
   
   
+"""
+In GloVe, we measure the similarity of the hidden factors
+between words to predict their co-occurrence count. Viewed from 
+this perspective, we do not predict the co-occurrence words only.
+ We want to create vector representations that can predict their
+  co-occurrence counts in the corpus also.
+"""
 
-
+'''
+Word embedding encodes words. But it does not account for its word context
+we will look at vector representations for sentences that can be used for many NLP tasks. BERT is used by Google in its search and good for many NLP tasks. '''
 def test():
 
    
