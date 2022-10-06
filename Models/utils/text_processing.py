@@ -228,7 +228,7 @@ def get_vocab_size(excerpt_list, n, seq_size):
         gram_len = len(n_grams)
         if gram_len >= seq_size:
             n_grams = n_grams[0:seq_size]
-            print(n_grams)
+            #print(n_grams)
         else:
             diff = seq_size - gram_len
             extra = [0]*diff
