@@ -164,10 +164,9 @@ def create_n_grams(excerpt_list, n, vocab_size, seq_size):
             extra = [0]*diff
             hot = hot + extra
 
-        n_gram_list.append(hot)
-    
+        n_gram_list.append(hot) 
     n_gram_array = np.array(n_gram_list)
-    
+
     return n_gram_array
 
 
@@ -221,8 +220,6 @@ def get_vocab_size(excerpt_list, n, seq_size):
 
         # Extract n-grams           
         n_grams = [excerpt[i:i + n] for i in range(len(excerpt) - n + 1)]
-        #print(n_grams)
-        #print(len(n_grams))
 
         # Create list of n-grams
         gram_len = len(n_grams)
@@ -233,7 +230,7 @@ def get_vocab_size(excerpt_list, n, seq_size):
             diff = seq_size - gram_len
             extra = [0]*diff
             n_grams = n_grams + extra
-            #print(n_grams)
+    
         n_gram_list.append(n_grams)
     
     # Flatten n-gram list
@@ -241,16 +238,20 @@ def get_vocab_size(excerpt_list, n, seq_size):
     
     # Calculate vocab size
     n_gram_cnt = Counter(n_gram_list)
-    #print(n_gram_cnt)
     vocab_size = len(n_gram_cnt)
     
     return vocab_size
 
-def test():
+# def test():
 
    
+    # test_list = ["Hello world many times over","yes me again"]
+    # size = get_vocab_size(test_list,3,150)
+    # print(size)
+    # x = create_n_grams(test_list,3,size,150)
+    # print(x)
    
-    test_data = fetch_20newsgroups(subset='train')
+    #test_data = fetch_20newsgroups(subset='train')
 
     #Testing term frequency 
     # X, vectorizer_tf  = initialise_term_frequency_vectorizer(test_data['data'],stopwords=True)
