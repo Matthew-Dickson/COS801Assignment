@@ -1,12 +1,9 @@
-import pandas as pd
 import numpy as np
-import chardet
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import OneHotEncoder
 from collections import Counter
 import seaborn as sns
 import matplotlib.pyplot as plt
 import string
+import re
 
 
 #Print statistics
@@ -140,3 +137,8 @@ def make_text_lower(text):
 def remove_text_with_substring(data,text,substring):
     df = data[text.str.contains(substring) == False]
     return df
+
+
+#Removes urls from string
+def remove_url(txt):
+    return " ".join(re.sub("([^0-9A-Za-z \t])|(\w+:\/\/\S+)", "", txt).split())
