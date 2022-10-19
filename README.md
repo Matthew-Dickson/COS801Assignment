@@ -14,3 +14,5 @@ All generated images will be output into Data/Outputs
 
 # MODEL
 Inorder to run a model please run the note books under the Models folder all images generated will be output in Models/Outputs
+Inorder to run Style HAN please download glove embeddings from here https://nlp.stanford.edu/projects/glove/ and place the glove 100 dimension file
+in a folder named embeddings under the model folder
