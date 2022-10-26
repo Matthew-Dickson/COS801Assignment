@@ -1,5 +1,5 @@
 # COS801Assignment
-Please follow the instructions based on what use want to run
+Please follow the instructions based on what you want to run
 
 # DATA PROCESSING
 Inorder to run the data processing (For cleaning before using it for modeling) run the the data_processing note book in the Data folder
