@@ -1,8 +1,9 @@
 # COS801Assignment
-Please follow the instructions based on what you want to run.
-Install the required modules using the requirement.txt. 
+Please follow the instructions based on what you want to run. Install the required modules using the requirement.txt. 
+<br>
 pip install - r requirements.txt.
-Environment test on: Python 3.9.6 64-bit.
+<br>
+Environment tested on: Python 3.9.6 64-bit.
 
 # DATA PROCESSING
 Inorder to run the data processing (For cleaning before using it for modeling) run the the data_processing note book in the Data folder
