@@ -1,7 +1,7 @@
 # COS801Assignment
-Please follow the instructions based on what you want to run. Install the required modules using the requirement.txt. 
+Please follow the instructions based on what you want to run. 
 <br>
-pip install - r requirements.txt.
+Install the required modules using the requirement.txt (pip install - r requirements.txt)
 <br>
 Environment tested on: Python 3.9.6 64-bit.
 
